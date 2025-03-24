@@ -107,6 +107,65 @@ p {
   }
 }
 
+.slideshow-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* Each tile */
+.tile {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px; /* To add 3D effect */
+}
+
+/* The flip animation for the tile */
+.tile-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 1s ease;
+}
+
+/* The front and back of the tile */
+.tile-front,
+.tile-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+
+.tile-front {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile-back {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* When tile flips, we apply the transformation */
+.tile.active .tile-inner {
+  transform: rotateY(180deg);
+}
   
   /* Balloons */
 .balloon {
@@ -186,8 +245,8 @@ p {
   }
 
   .cta-button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 10px 50px;
   }
 
   .balloon {
@@ -204,10 +263,8 @@ p {
     top: 100px;
   }
 
-  img {
-    width: 100%;
-    max-width: auto;
-    height: auto;
-    border-radius: 18px;
+  .tile {
+    width: 150px;
+    height: 140px;
   }
 }
