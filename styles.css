@@ -166,7 +166,57 @@ p {
 .tile.active .tile-inner {
   transform: rotateY(180deg);
 }
-  
+
+/* Video Container */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 50vh;
+  background-color: #000;
+}
+
+#youtube-video {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Play Button */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 50px;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+}
+
+
   /* Balloons */
 .balloon {
   position: absolute;
@@ -236,7 +286,7 @@ p {
   /* Responsive Design */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 8px 16px;
   }
 
@@ -264,7 +314,7 @@ p {
   }
 
   .tile {
-    width: 150px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
   }
 }

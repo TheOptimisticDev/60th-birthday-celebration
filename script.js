@@ -1,5 +1,5 @@
 function redirect() {
-  window.location.href = "https://www.youtube.com/watch?v=example";
+  window.location.href = "https://www.youtube.com/watch?v=5u4xTa3LR2U&list=RD5u4xTa3LR2U&start_radio=1";
 }
 
 function redirectToExplore() {
