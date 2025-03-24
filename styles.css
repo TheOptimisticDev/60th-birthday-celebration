@@ -22,15 +22,6 @@ body {
   z-index: 2;
 }
 
-img {
-  width: 100%; 
-  max-width: 200px;
-  height: auto;
-  border-radius: 10%;
-  margin: 10px 0;
-  box-shadow: none;
-}
-
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 4.5rem;
@@ -166,56 +157,6 @@ p {
   transform: rotateY(180deg);
 }
 
-/* Video Container */
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 50vh;
-  background-color: #000;
-}
-
-#youtube-video {
-  display: none;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-/* Play Button */
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 50px;
-  border: none;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-
-.play-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Video Wrapper */
-.video-wrapper {
-  position: relative;
-  width: 560px;
-  height: 315px;
-  max-width: 100%;
-}
-
-
   /* Balloons */
 .balloon {
   position: absolute;
@@ -285,7 +226,6 @@ p {
   /* Responsive Design */
 @media (max-width: 768px) {
   h1 {
-    font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     padding: 8px;
   }
@@ -296,7 +236,7 @@ p {
 
   .cta-button {
     font-size: 1rem;
-    padding: 10px 50px;
+    padding: 10px 20px;
   }
 
   .balloon {
