@@ -34,7 +34,6 @@ h1 {
 p {
   font-size: 1.2rem;
   animation: fadeIn 3s ease-in;
-  margin: 10px 0;
   max-width: 90%;
 }
   
@@ -227,7 +226,6 @@ p {
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
-    padding: 8px;
   }
 
   p {
@@ -254,7 +252,7 @@ p {
   }
 
   .tile {
-    width: 100px;
+    width: 130px;
     height: 100px;
   }
 }
